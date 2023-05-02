@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="07_event.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img">
+        <img src="img/duck.jpeg" alt="">
+    </div>
+    
+    <button id="open" style="display: none;" onclick="showDetail()">설명 보기</button>
+
+    <div id="desc" class="detail">
+        <h3>귀여운 아기 오리</h3>
+        <p>아기 오리는 졸려요 깨우면 물어요💛 나름 아프답니다</p>
+        <button id="close"onclick="hideDetail()">설명 닫기</button>
+    </div>	
+
+    <script>
+        function showDetail() {  // '설명 보기'를 클릭했을 때 상세 설명을 보여주는 함수
+			document.querySelector('#desc').style.display = "block";	// 상세 설명 부분을 화면에 표시
+			document.querySelector('#open').style.display = "none";   // '상세 설명 보기' 단추를 화면에서 감춤
+		}
+		
+		function hideDetail() {  // '설명 닫기'를 클릭했을 때 상세 설명을 감추는 함수
+			document.querySelector('#desc').style.display = "none";	   // 상세 설명 부분을 화면에서 감춤
+			document.querySelector('#open').style.display = "block";	 // '상세 설명 보기' 단추를 화면에 표시
+		}
+    </script>
+</body>
+</html>

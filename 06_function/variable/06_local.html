@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 100;        // 전역 변수 a 선언
+
+        test();
+        document.write("a is " + a);
+
+        function test() {
+            var a = 50;     // 함수 내 지역 변수 a 선언
+        }
+    </script>
+</body>
+</html>

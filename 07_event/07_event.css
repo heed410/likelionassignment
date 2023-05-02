@@ -1,0 +1,19 @@
+* {
+    text-align: center;
+}
+
+img {
+    width: 30rem;
+}
+
+.img {
+    margin: 1rem;
+}
+
+button {
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
